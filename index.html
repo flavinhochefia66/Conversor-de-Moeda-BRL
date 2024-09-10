@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de BRL</title>
+    <link rel='stylesheet' href="style.css">
+</head>
+<body>
+
+<div id="container">
+
+    <h1>Conversor de Moeda BRL</h1>
+
+    <p>Valor:</p>
+    <input type="number" id="valor-da-moeda" placeholder="Digite o valor em Reais.">
+
+
+    <p>Para</p>
+    <select id="converter-moeda">
+        <option value="USD">USD</option>  
+        <option value="EUR">EUR</option>
+        <option value="JPY">JPY</option>
+        <option value="NOK">NOK</option>
+        <option value="MXN">MXN</option>  
+    </select>
+
+    <br>
+
+    <button onclick="converter()">Converter</button>
+
+    <h1>Valor Convertido: <span id="valor_convertido">0.00</span></h1>
+
+</div>
+
+<script src="script.js"></script>    
+</body>
+</html>
