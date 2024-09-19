@@ -1,0 +1,102 @@
+:root{
+
+--cor-fundo: #ffffff;
+--cor-texto: #000000;
+--cor-borda: #000000;
+--cor-input-borda: #000000;
+--cor-botao-selecionado: rgb(207, 207, 207);
+
+}
+
+.dark-mode{
+
+--cor-fundo: #212121;
+--cor-texto: #ffffff;
+--cor-borda: #ffffff;
+--cor-input-borda: #ffffff;
+--cor-botao-selecionado: rgb(241, 241, 241);
+
+}
+
+
+body{
+
+font-family: arial;
+font-size: 12pt;
+margin-top: 25px;
+background-color: var(--cor-fundo);
+color: var(--cor-texto);
+
+transition: background-color 0.3s, color 0.3s;
+
+}
+
+#container{
+
+align-items: center;
+justify-content: center;
+display: flex;
+flex-direction: column;
+border: 1px var(--cor-borda) solid;
+margin-left: 30%;
+margin-right: 30%;
+border-radius: 5px; 
+
+}
+
+input{
+
+border: none;
+border-bottom: 1px var(--cor-input-borda) solid;
+background-color: var(--cor-fundo);
+color: var(--cor-texto);
+transition: background-color 0.3s, color 0.3s;
+}
+
+input:focus{
+
+outline: none;
+
+}
+
+input::placeholder{
+
+color: var(--cor-texto);
+
+}
+
+select{
+transition: background-color 0.3s, color 0.3s;
+padding-left: 15px;
+padding-right: 15px;
+padding-top: 5px;
+padding-bottom: 5px;
+border-radius: 5px;
+
+background-color: var(--cor-fundo);
+border-color: var(--cor-input-borda);
+color: var(--cor-texto);
+
+}
+
+button{
+transition: background-color 0.3s, color 0.3s;
+border: 1px var(--cor-input-borda) solid;
+color: var(--cor-texto);
+border-radius: 5px;
+cursor: pointer;
+background-color: var(--cor-fundo);
+
+padding-left: 15px;
+padding-right: 15px;
+padding-top: 5px;
+padding-bottom: 5px;
+border-radius: 5px;
+
+}
+
+button:hover{
+
+background-color: rgb(207, 207, 207);
+
+}
